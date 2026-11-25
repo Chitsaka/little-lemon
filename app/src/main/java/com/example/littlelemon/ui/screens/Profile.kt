@@ -36,8 +36,8 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import com.example.littlelemon.R
-import com.example.littlelemon.ui.theme.Black
-import com.example.littlelemon.ui.theme.DisabledState
+import com.example.littlelemon.ui.theme.LittleLemonColor.Black
+import com.example.littlelemon.ui.theme.LittleLemonColor.DisabledState
 import com.example.littlelemon.ui.theme.LittleLemonColor.Yellow
 
 @Composable

@@ -6,17 +6,18 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.core.content.edit
-import androidx.navigation.compose.composable
 import androidx.navigation.NavHostController
-import com.example.littlelemon.ui.screens.Onboarding
-import com.example.littlelemon.ui.screens.HomeScreen
-import com.example.littlelemon.ui.screens.ProfileScreen
 import androidx.navigation.compose.NavHost
-
+import androidx.navigation.compose.composable
+import com.example.littlelemon.MenuDao
+import com.example.littlelemon.ui.screens.HomeScreen
+import com.example.littlelemon.ui.screens.Onboarding
+import com.example.littlelemon.ui.screens.ProfileScreen
 
 @Composable
 fun Navigation(navController: NavHostController,
-               modifier: Modifier = Modifier
+               modifier: Modifier = Modifier,
+               menuDao: MenuDao
 ) {
     val context = LocalContext.current
 
@@ -64,7 +65,8 @@ fun Navigation(navController: NavHostController,
             HomeScreen(
                 onProfileClick = {
                     navController.navigate(Destinations.Profile.route)
-                }
+                },
+                menuDao=menuDao
             )
         }
 
