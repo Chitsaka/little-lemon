@@ -43,11 +43,11 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.core.content.edit
 import com.example.littlelemon.R
-import com.example.littlelemon.ui.theme.Black
-import com.example.littlelemon.ui.theme.DisabledState
-import com.example.littlelemon.ui.theme.GreenDark
+import com.example.littlelemon.ui.theme.LittleLemonColor.Black
+import com.example.littlelemon.ui.theme.LittleLemonColor.DisabledState
+import com.example.littlelemon.ui.theme.LittleLemonColor.GreenDark
 import com.example.littlelemon.ui.theme.LittleLemonColor.Yellow
-import com.example.littlelemon.ui.theme.White
+import com.example.littlelemon.ui.theme.LittleLemonColor.White
 
 
 @Composable
